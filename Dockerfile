@@ -1,4 +1,7 @@
-FROM stilliard/pure-ftpd:hardened
+FROM nginx
 
-# e.g. you could change the defult command run:
-CMD /usr/sbin/pure-ftpd -c 30 -C 5 -l puredb:/etc/pure-ftpd/pureftpd.pdb -E -j -R
+VOLUME ["/usr/share/nginx/html"]
+
+ADD default.conf /etc/nginx/conf.d/
+
+# drn nginxd -d -v $(pwd)/distr:/usr/share/nginx/html -p 8080:80 file-srvr
