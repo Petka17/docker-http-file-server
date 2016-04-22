@@ -1,7 +1,7 @@
 ### Distributives
-./distr/database
-./distr/client
-./distr/siebel
+./distr/database  
+./distr/client  
+./distr/siebel  
 
 ### Usage
 ```
