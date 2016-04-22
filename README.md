@@ -13,3 +13,7 @@ or run scripts
 ./build.sh
 ./run.sh
 ```
+
+### Check
+Visit http://localhost:8080
+_for virtual box need to setup port forwarding_
